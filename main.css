@@ -1,0 +1,192 @@
+/* -----------------------------------------------------------------------
+타이포그래피 설정
+----------------------------------------------------------------------- */
+@font-face {
+  font-family: "TMONBLACK";
+  src: url("fonts/TMONBLACK.ttf") format("truetype");
+}
+@font-face {
+  font-family: "cafe24";
+  src: url("fonts/CAFE24OHSQUAREAIR.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  font-family: "TMONBLACK";
+}
+/* -----------------------------------------------------------------------
+header 영역 - 로고, 메인메뉴
+----------------------------------------------------------------------- */
+#header {
+  width: 1920px;
+  height: 250px;
+  background: rgba(224,255,249,1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#shbox {
+  border:1px dashed;
+  width: 600px;
+  height: 215px;
+  background: rgba(228,228,228,1);
+  position: absolute;
+  top: 16px;
+  left: 1200px;
+  padding-right: 40px;
+}
+#greenline {
+  width: 20px;
+  height: 213px;
+  background: rgba(138,204,115,1);
+  position: absolute;
+}
+#headerlogo {
+  color: rgba(0,0,0,1);
+  position: absolute;
+  margin: 5px 30px;
+  font-family: "cafe24";
+  font-size: 30px;
+  text-align: left;
+}
+#headerlogo p {
+  margin: 13px;
+  padding: 0;
+}
+#logo {
+  background: url("images/logo.png");
+  background-size: cover;
+  position: absolute;
+  width: 687px;
+  height: 215px;
+  top: 18px;
+  left: 74px;
+}
+#navmenu {
+  display: flex;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  padding-right: 700px;
+}
+#navmenu p {
+  margin: 0 40px;
+}
+/* #navmenu 요소에 포함된 a 태그 스타일 설정 */
+#navmenu a {
+  color: #000;
+}
+#navmenu a:link {
+  text-decoration: none;
+}
+#navmenu a:hover {
+  text-decoration: underline;
+  color: blueviolet;
+}
+
+/* -----------------------------------------------------------------------
+본문 영역
+----------------------------------------------------------------------- */
+
+#main-container {
+  position: relative;
+  width: 1150px;
+  height: 900px;
+  margin-top: 300px;
+  margin-bottom: 60px;
+  left: 50px;
+  background-color: bisque;
+}
+#description {
+  font-family: "Pretendard-Regular";
+  font-size: 30px;
+  width: 1100px;
+  margin-top: 420px;
+  /*background-color: blanchedalmond;*/
+}
+#descriptionh1 {
+  color:rgb(19, 2, 172);
+}
+#mainpicture {
+  width: 800px;
+  height: 410px;
+  background: url("images/mainpicture.png");
+  background-size: cover;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+/* -----------------------------------------------------------------------
+사이드 영역
+----------------------------------------------------------------------- */
+#rightbox {
+  display: flex;
+  position: absolute;
+  width: 600px;
+  height: 900px;
+  background: rgba(255,251,236,1);
+  margin-bottom: 30px;
+  margin-left: 1200px;
+}
+#dlc {
+  display: flex;
+  width: 500px;
+  height: 165px;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  top: 55px;
+  left: 15px;
+}
+#dlctext {
+  width: 300px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  font-size: 40px;
+  text-align: left;
+}
+#update {
+  width: 500px;
+  height: 196px;
+  background: url("images/update.png");
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  top: 410px;
+  left: 30px;
+}
+#updatetext {
+  width: 400px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 315px;
+  left: 30px;
+  font-size: 40px;
+  text-align: left;
+}
+#event {
+  width: 502px;
+  height: 165px;
+  background: url("images/event.png");
+  background-size: cover;
+  position: absolute;
+  top: 718px;
+  left: 30px;
+}
+#eventtext {
+  width: 400px;
+  color: rgba(0,0,0,1);
+  position: absolute;
+  top: 640px;
+  left: 30px;
+  font-size: 40px;
+  text-align: left;
+}
